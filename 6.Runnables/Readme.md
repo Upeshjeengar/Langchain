@@ -1,5 +1,26 @@
 Runnables help in combining various components of lanchain like LLMs, output parsers, or retrievers etc.
 > Used to connect various components sequentially to make complex workflows
+
+# Types of ruunables
+## 1. Task specific
+**Definition**: These are core LangChain components that have been converted into Runnables so they can be used in pipelines.  
+**Purpose**: Perform task-specific operations like LLM calls, prompting, retrieval, etc.  
+**Examples**:
+* `ChatOpenAI` : Runs an LLM model.  
+* `PromptTemplate` : Formats prompts dynamically.  
+* `Retriever` : Retrieves relevant documents.  
+
+## 2. Runnable primitives
+**Definition**: These are fundamental building blocks for structuring execution logic in Al workflows(Basically helps in connecting various task specific runnables).  
+**Purpose**: They help orchestrate execution by defining how different Runnables interact (sequentially, in parallel, conditionally, etc.).
+**Examples**:
+* `RunnableSequence` Runs steps in order ( operator).  
+* `RunnableParallel` Runs multiple steps simultaneously.  
+* `RunnableMap` Maps the same input across multiple functions.  
+* `RunnableBranch` Implements conditional execution (if-else logic).  
+* `RunnableLambda` Wraps custom Python functions into Runnables.  
+* `RunnablePassthrough` Just forwards input as output (acts as a placeholder).  
+
 # LangChain Runnables
 
 Runnables are the fundamental building blocks in LangChain that enable you to create complex workflows by combining various components like LLMs, output parsers, retrievers, and more.
