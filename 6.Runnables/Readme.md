@@ -14,7 +14,7 @@ Runnables help in combining various components of lanchain like LLMs, output par
 **Definition**: These are fundamental building blocks for structuring execution logic in Al workflows(Basically helps in connecting various task specific runnables).  
 **Purpose**: They help orchestrate execution by defining how different Runnables interact (sequentially, in parallel, conditionally, etc.).
 **Examples**:
-* `RunnableSequence` Runs steps in order ( operator).  
+* `RunnableSequence` Runs steps in order or sequence( operator).  
 * `RunnableParallel` Runs multiple steps simultaneously.  
 * `RunnableMap` Maps the same input across multiple functions.  
 * `RunnableBranch` Implements conditional execution (if-else logic).  
