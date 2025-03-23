@@ -20,6 +20,7 @@ Runnables help in combining various components of lanchain like LLMs, output par
 * `RunnableBranch` Implements conditional execution (if-else logic).  
 * `RunnableLambda` Wraps custom Python functions into Runnables.  
 * `RunnablePassthrough` Just forwards input as output (acts as a placeholder).  
+**LCEL**(Langchain Expression Language): as `RunnableSequence` is most frequently used it is generally replaced with '|' which is known as pipe operator in general. 
 
 # LangChain Runnables
 
