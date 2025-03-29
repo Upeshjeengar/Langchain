@@ -70,7 +70,18 @@ where *= recursive search through subfolders and `glob` is a pattern specifying 
 |load()|  lazy_load()|
 |--------|-------------|
 |Eager Loading (loads everything at once).|Lazy Loading (loads on demand).|
-Returns: A list of Document objects.|Returns: A generator of Document objects.
+Returns: A `list` of `Document` objects.|Returns: A `generator` of `Document` objects.
 Loads all documents immediately into memory.|Documents are not all loaded at once, they're fetched one at a time as needed.
 **Best when**: The number of documents is small.You want everything loaded upfront. |**Best when**: You're dealing with large documents or lots of files.You want to stream processing (e.g. chunking, embedding) without using lots of memory.
 
+### Web based loader
+**WebBaseLoader** is a document loader in LangChain used to load and extract text content from web pages (URLs).  It uses `BeautifulSoup` under the hood to parse HTML and extract visible text.  
+**When to Use:** For blogs, news articles, or public websites where the content is primarily text-based and static.
+
+**Limitations:**
+* Doesn't handle JavaScript-heavy pages well (use `SeleniumURLLoader` for that).
+* Loads only static content (what's in the HTML, not what loads after the page renders).  
+
+(see `webbase_loader.py` for code implementation)
+
+[See Documentation](https://python.langchain.com/docs/integrations/document_loaders/)

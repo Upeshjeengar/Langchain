@@ -53,7 +53,7 @@ HUGGINGFACEHUB_API_TOKEN=your_huggingface_token
 - [OpenAI Documentation](https://platform.openai.com/docs/introduction)
 - [Anthropic Claude Documentation](https://docs.anthropic.com/claude/docs)
 - [HuggingFace Documentation](https://huggingface.co/docs)
-
+- [Campusx Yotube Videos](https://www.youtube.com/playlist?list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0)
 ## 🛠️ Projects
 
 Each directory contains different aspects of LangChain:

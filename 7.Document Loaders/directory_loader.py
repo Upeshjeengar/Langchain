@@ -6,7 +6,8 @@ loader = DirectoryLoader(
     loader_cls=PyPDFLoader
 )
 
-docs = loader.lazy_load()
+# docs = loader.load() # below for loop will take time and will prinit everything once
+docs = loader.lazy_load() # will load one by one and remove previous one
 
 for document in docs:
     print(document.metadata)
