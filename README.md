@@ -61,7 +61,11 @@ Each directory contains different aspects of LangChain:
 1. **Langchain Models**: Experiments with various LLM integrations
 2. **Langchain Prompts**: Learning prompt engineering techniques
 3. **Structured Output**: Working with structured data outputs
-
+4. **Output Parsers**: Converting LLM responses into structured formats
+5. **Chains**: Combining multiple components into sequential workflows
+6. **Runnables**: Building modular and reusable LangChain components
+**RAG**
+7. **Document Loaders**: used to load data from various sources into a standardized format
 ## 📝 License
 
 This project is for learning purposes. Feel free to use the code as reference for your own learning journey.
