@@ -19,7 +19,7 @@ loader = TextLoader('cricket.txt', encoding='utf-8')
 
 docs = loader.load()
 
-print(type(docs))
+print(type(docs)) #converts every type of document to List type
 
 print(len(docs))
 
