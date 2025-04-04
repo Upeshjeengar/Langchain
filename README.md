@@ -64,8 +64,15 @@ Each directory contains different aspects of LangChain:
 4. **Output Parsers**: Converting LLM responses into structured formats
 5. **Chains**: Combining multiple components into sequential workflows
 6. **Runnables**: Building modular and reusable LangChain components
-**RAG**
-7. **Document Loaders**: used to load data from various sources into a standardized format
+
+### **RAG**
+RAG has four main components:
+1. **Document Loaders**: used to load data from various sources into a standardized format.
+2. **Text splitter**:process of breaking large chunks of text small chunks that an LLM can handle effectively.
+3. **Vector databases**:
+4. **Retrievers**:
+
+
 ## 📝 License
 
 This project is for learning purposes. Feel free to use the code as reference for your own learning journey.
