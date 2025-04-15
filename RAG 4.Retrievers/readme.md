@@ -70,3 +70,31 @@ A simple similarity search might miss documents that talk about those things but
 4. Combines and deduplicates the results
 
 ### 3. contextual Compression 
+The Contextual Compression Retriever in LangChain is an advanced retriever that improves retrieval quality by compressing documents after retrieval keeping only the relevant content based on the user's query.  
+**Query:**
+> "What is photosynthesis?"
+
+Retrieved Document (by a *traditional retriever*):
+> "The Grand Canyon is a famous natural site.
+Photosynthesis is how plants convert light into energy.
+Many tourists visit every year."
+
+**Problem:**  
+- The retriever returns the entire paragraph
+- Only one sentence is actually relevant to the query
+- The rest is irrelevant noise that wastes context window and may confuse the LLM
+
+What *Contextual Compression Retriever* does:  
+Returns only the relevant part, e.g.  
+> "Photosynthesis is how plants convert light into energy."
+
+**How It Works**
+1. Base Retriever (e.g., FAISS, Chroma) retrieves N documents.
+2. A compressor (usually an LLM) is applied to each document.
+3. The compressor keeps only the parts relevant to the query.
+4. Irrelevant content is discarded.
+
+**When to Use**
+- Your documents are long and contain mixed information
+- You want to reduce context length for LLMs
+- You need to improve answer accuracy in RAG pipelines
