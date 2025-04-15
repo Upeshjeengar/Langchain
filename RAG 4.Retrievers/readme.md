@@ -2,7 +2,7 @@
 A retriever is a component in LangChain that fetches relevant documents from a data source in response to a user's query.  
 There are multiple types of retrievers
 All retrievers in LangChain are runnables
-
+ 
 Broadly there are two ways on which retrivers can be classified:
 1. On the basis of which data source it is working with
 like wikipedia, arxiv etc.
