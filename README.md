@@ -69,8 +69,8 @@ Each directory contains different aspects of LangChain:
 RAG has four main components:
 1. **Document Loaders**: used to load data from various sources into a standardized format.
 2. **Text splitter**:process of breaking large chunks of text small chunks that an LLM can handle effectively.
-3. **Vector databases**:
-4. **Retrievers**:
+3. **Vector databases**: a type of database designed to store, manage, and search high-dimensional vector data.
+4. **Retrievers**:component in LangChain that fetches relevant documents from a data source in response to a user's query
 
 
 ## 📝 License
