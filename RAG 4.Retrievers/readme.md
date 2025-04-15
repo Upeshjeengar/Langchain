@@ -52,5 +52,21 @@ In regular similarity search, you may get documents that are:
 And so on...
 
 ### 2. Multi-Query Retriever 
+> Sometimes a single query might not capture all the ways information is phrased in your documents.  
+
+For example Query:  
+> "How can I stay healthy?"   
+
+Could mean:  
+- What should I eat?  
+- How often should I exercise?  
+- How can I manage stress?  
+
+A simple similarity search might miss documents that talk about those things but don't use the word "healthy".
+
+1. Takes your original query
+2. Uses an LLM (e.g., GPT-3.5) to generate multiple semantically different versions of that query
+3. Performs retrieval for each sub-query
+4. Combines and deduplicates the results
 
 ### 3. contextual Compression 
