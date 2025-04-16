@@ -49,7 +49,7 @@ HUGGINGFACEHUB_API_TOKEN=your_huggingface_token
 
 ## 📚 Learning Resources
 
-- [LangChain Documentation](https://python.langchain.com/docs/get_started/introduction.html)
+- [LangChain Documentation](https://python.langchain.com/docs/tutorials/)
 - [Campusx Yotube Videos](https://www.youtube.com/playlist?list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0)
 - [OpenAI Documentation](https://platform.openai.com/docs/introduction)
 - [Anthropic Claude Documentation](https://docs.anthropic.com/claude/docs)
