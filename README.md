@@ -64,6 +64,8 @@ Each directory contains different aspects of LangChain:
 4. **Output Parsers**: Converting LLM responses into structured formats
 5. **Chains**: Combining multiple components into sequential workflows
 6. **Runnables**: Building modular and reusable LangChain components
+7. **Tools**:A tool is just a Python function (or API) that is packaged in a way the LLM can understand and call when needed.   
+
 
 ### **RAG**
 RAG has four main components:
