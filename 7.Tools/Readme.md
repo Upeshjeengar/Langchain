@@ -47,3 +47,27 @@ Ways to create custom Tools:
 A Structured Tool in LangChain is a special type of tool where the input to the tool follows a structured schema, typically defined using a Pydantic model.
 - Using `BaseTool` class: BaseTool is the abstract base class for all tools in LangChain. It defines the core structure and interface that any tool must follow, whether it's a simple one-liner or a fully customized function.
 All other tool types like @tool, Structured Tool are built on top of BaseTool
+
+# Tool calling
+Tool Calling is the process where the LLM (language model) decides, during a conversation or task, that it needs to use a specific tool (function) and generates a structured output with:
+* the name of the tool
+* the arguments to call it with  
+
+▲The LLM does not actually run the tool - it just suggests the tool and the input arguments. The actual execution is handled by LangChain or you
+
+# Tool Binding
+Tool Binding is the step where you register tools with a Language Model (LLM) so that:
+1. The LLM knows what tools are available
+2. It knows what each tool does (via description)
+3. It knows what input format to use (via schema)
+
+# Tool execution
+LLM will not run code by itself, it will just suggest which tools you can use.  
+Tool Execution is the step where the actual Python function (tool) is run using the input arguments that the
+LLM suggested during tool calling.  
+In simpler words:  
+The LLM says:  
+`Hey, call the multiply tool with a=8 and b=7.`  
+Tool Execution is when you or LangChain actually run:  
+`multiply(a=8, b=7)`
+and get the result: `56`
